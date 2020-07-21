@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            width: 200px;
+            height: 200px;
+            /* background-color: red;*/
+            border: solid 1px red;
+            position: relative;
+            margin: 200px;
+
+        }
+        .two{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="one">
+        <div class="two"></div>
+    </div>
+    <script src="drag.js"></script>
+
+    <script>
+        var dragObj=new drag(".two");
+        // dragObj.y=false;
+        dragObj.side.x1=0
+        dragObj.side.x2=100
+
+        dragObj.side.y1=0
+        dragObj.side.y2=100
+
+        dragObj.move();
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
